@@ -1,23 +1,31 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section>
+  <article class="published">
+    <p>
+      I’m the author of <a href="http://designingforperformance.com/">Designing for Performance</a></strong>. This practical introduction to performance from a designer and front-end developer perspective has been featured in Netmag’s <a href="/images/NET264.jpg">“Need list”</a> and reviewed on <a href="https://css-tricks.com/relating-designing-performance-lara-hogan/">CSS-Tricks</a>. It covers:
+    </p>
+    <ul>
+      <li>The basics of page speed: requests and how browsers render content, and how it impacts your site, brand, and users</li>
+      <li>Optimizing images, HTML, CSS, and fonts for performance</li>
+      <li>Implementing responsive web design with an eye on performance</li>
+      <li>Tactics for weighing aesthetic choices and their performance impact</li>
+      <li>Tools for measuring and iterating on performance</li>
+      <li>Methods for shaping an organization’s performance culture</li>
+    </ul>
+  </article>
+  <article class="published">
+    <p>
+      I’m the author of <a href="http://designingforperformance.com/">Designing for Performance</a></strong>. This practical introduction to performance from a designer and front-end developer perspective has been featured in Netmag’s <a href="/images/NET264.jpg">“Need list”</a> and reviewed on <a href="https://css-tricks.com/relating-designing-performance-lara-hogan/">CSS-Tricks</a>. It covers:
+    </p>
+    <ul>
+      <li>The basics of page speed: requests and how browsers render content, and how it impacts your site, brand, and users</li>
+      <li>Optimizing images, HTML, CSS, and fonts for performance</li>
+      <li>Implementing responsive web design with an eye on performance</li>
+      <li>Tactics for weighing aesthetic choices and their performance impact</li>
+      <li>Tools for measuring and iterating on performance</li>
+      <li>Methods for shaping an organization’s performance culture</li>
+    </ul>
+  </article>
+</section>
