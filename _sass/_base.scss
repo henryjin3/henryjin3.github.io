@@ -1,3 +1,4 @@
+
 /**
  * Reset some basic elements
  */
@@ -13,15 +14,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
+
 
 
 
@@ -201,4 +194,84 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+//begin lara hogan stuff
+html,body,div,span,h1,h2,h3,p,a,em,img,strong,article,section,header,footer,dl,
+dd,dt,table,th,td {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent
+}
+table{border-collapse: collapse;border-spacing: 0;}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+h1, h2, h3, h4, strong, th, .name {
+  font-family: $base-font-family;
+  margin: 1.4em;
+}
+
+h1, h2, .name { font-size: 2.4rem; line-height: 1em; }
+h2 { margin-top: 2.4rem; }
+h3 {font-size:1.2rem; line-height:1.2rem; margin-top: 1.8rem; margin-bottom: 0; }
+
+p,footer{margin:1.2em 0}
+a{color:#06c;}
+a:visited{color:#034c95;}
+h1 a, .name a{text-decoration: none;}
+
+section, header { margin:1.2rem auto .5em; overflow:hidden; }
+	header { margin-top: 0; }
+footer { color:#a79e97; text-align:center;}
+
+.bookimg { float:right;display:block;margin-left:1em;border:0;padding:0; }
+
+.talks { margin: 0; padding: 0; }
+.talks strong { width: 75px; display: inline-block; text-indent: 0; margin: 0; }
+.talks a { white-space: nowrap; }
+.talks li { margin: 0; padding: .5rem 0 .5rem 75px; text-indent: -75px; overflow: hidden;
+	list-style: none; border-bottom: 1px #ccc dotted; }
+.links { padding: 0; margin: 0; text-indent: 0; display: inline-block; float: right; }
+.links a, .links a:visited { margin:0 2px; padding: 2px 5px; background: #e85151; border-radius: 5px; color: $header-text-picture-color; text-decoration: none; }
+.links .v,.links .v:visited { background: #BA4185; }
+
+/* Media queries */
+@media (min-width: 770px) {
+	header { background: url(/images/velocity-big.jpg) no-repeat 50% 50%; background-size: cover; width: 100%; height: 400px; position: relative; }
+	header article { color: $header-text-picture-color; margin: 0 auto; position: relative; top: 50px; width: 420px; padding: 0 330px 0 0; }
+	header a:link, header a:visited { color: $header-text-picture-color; }
+	article, section { width: 750px; padding: 0; }
+	section h2:nth-child(1) {margin-top: 1.2rem;}
+}
+
+@media (max-width: 780px) {
+	h1,h2,h3,h4,p,.name,ul,.talks { margin-left: 2rem; margin-right: 2rem; }
+	header ~ section { margin-top: -1.2rem; }
+	.post h1 { margin-top: 1.4rem; }
+	.post { padding-top: 0; border-bottom: 1px #ccc dotted;}
+	.post img { width: 100%; }
+	.links { margin: 0.6em 0; float: none; display: block; clear: both; }
+	.links a { padding: 5px 10px; }
+}
+
+@media (min-width: 440px) {
+	body { font-family:$base-font-family;; font-size:16px; }
+	h1, h2, h3, h4, strong, th, .name {font-family:$base-font-family;font-weight:normal;font-style:normal;}
+}
+
+@media (max-width: 440px) {
+	h1,h2,h3,h4,p,.name,ul,.talks { margin-left: 1rem; margin-right: 1rem; }
+	.bookimg { display: none; }
+	p, li { line-height: 1.6em; }
 }
