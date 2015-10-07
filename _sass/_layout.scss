@@ -2,12 +2,11 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+  border: 20px solid #000;
+  background: yellow;
+  padding: 3em 6em;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+  height: 100vh;
 }
 
 .site-title {
